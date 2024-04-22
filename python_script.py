@@ -29,13 +29,12 @@ clean_words = len(filtered_text)
 print("number of words after removing stopwords",clean_words)
 
 word_freq = {}
+
 # Count the frequency of each word
 for word in filtered_text:
     # Increment the count for each word
     word_freq[word] = word_freq.get(word, 0) + 1
 
-#top_words = word_freq.most_common()
-
-# Print the top most frequent words
-#for word, freq in top_words:
-#   print(f"Word: {word}, Frequency: {freq}")
+# Print the word frequencies
+for word, freq in word_freq.items():
+    print(f"Word: {word}, Frequency: {freq}")
