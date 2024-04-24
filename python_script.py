@@ -2,7 +2,7 @@ import nltk
 from nltk.corpus import stopwords
 nltk.download('punkt')
 
-with open('D:\\uni\\semester 4\\cloud computing\\assign 2\\paragraphs.txt', 'r') as file:
+with open('paragraphs.txt', 'r') as file:
     main_file = file.read()
 
 nltk.download('stopwords')
